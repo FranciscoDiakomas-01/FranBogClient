@@ -92,7 +92,7 @@
 }
 
 #lastPost figure button{
-  width: 25%;
+  width: 28%;
   height: 40px;
   background-color: #000;
   color: #ffff;
@@ -105,6 +105,48 @@
 
  #lastPost aside{
   grid-template-columns: 1fr;
+  gap: 50px;
+}
+
+#lastPost img{
+  height: 250px;
+  width: 100%;
+}
+#lastPost span {
+  display: flex;
+  align-items: center;
+}
+#lastPost span button{
+  width: 120px;
+}
+  #lastPost figure button{
+    width: 45%;
+  }
+
+  #inicial h1{
+  font-size: 30pt;
+}
+
+  #inicial button{
+    width: 150px;
+  }
+  #lastPost figure figcaption{
+    width: 100%;
+  }
+  #lastPost figure figcaption div{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+}
+
+
+
+@media screen and (min-width : 800px) {
+
+ #lastPost aside{
+  grid-template-columns: 1fr 1fr;
   gap: 50px;
 }
 

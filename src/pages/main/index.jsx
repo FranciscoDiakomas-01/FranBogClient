@@ -46,7 +46,11 @@ export default function Main() {
       <article id="lastPost">
         <span>
           <p>Últimos Posts</p>
-          <button>
+          <button
+            onClick={() => {
+              navigate("/post");
+            }}
+          >
             <p>Ver Todos</p>
             <FaArrowRight />
           </button>
@@ -59,13 +63,21 @@ export default function Main() {
               <figcaption>
                 <p>{post.description}</p>
                 <div>
-                  <i> <FaCalendar/>{post.data}</i>
+                  <i>
+                    {" "}
+                    <FaCalendar />
+                    {post.data}
+                  </i>
                   <i>By Francisco Diakomas</i>
                 </div>
               </figcaption>
-              <button onClick={() => {
-                navigate("/postdetails");
-              }}>Mais Detalhes</button>
+              <button
+                onClick={() => {
+                  navigate("/postdetails");
+                }}
+              >
+                Mais Detalhes
+              </button>
             </figure>
           ))}
         </aside>
