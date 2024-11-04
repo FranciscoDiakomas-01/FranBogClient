@@ -97,9 +97,7 @@
   border-radius: 30px;
 }
 
-
-
-@media screen and (max-width : 720px) {
+@media screen and (max-width : 800px) {
   #posts{
     display: flex;
     flex-direction: column;
@@ -129,58 +127,6 @@
 
 #posts > article{
     grid-template-columns: 1fr;
-    gap: 50px;
-}
-#posts img{
-  height: 200px;
-  width: 100%;
-}
-  #posts article figure figcaption{
-    width: 100%;
-  }
-
-  #posts article figcaption div{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  #posts article button{
-  width: 150px;
-}
-
-#posts >  button{
-  background-color: #001aff;
-  width: 150px;
-}
-
-}
-
-
-@media screen and (max-width : 1080px) {
-
-  #posts > form input{
-    width: 100%;
-    font-size: 13pt;
-    padding-left: 45px;
-  }
-  #posts > form{
-    flex-direction: row;
-    gap: 0px;
-    width: 80%;
-  }
-  #posts > form select{
-    width: 140px;
-    font-size: 13pt;
-}
-
-#posts > form button{
-    top: 0;
-    height: 100%;
-    width: 7%;
-}
-
-#posts > article{
-    grid-template-columns: 1fr 1fr;
     gap: 50px;
 }
 #posts img{
