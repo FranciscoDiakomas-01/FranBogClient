@@ -1,0 +1,158 @@
+
+#inicial{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-image:linear-gradient(to left , rgba(0, 0, 0, 0.537) , rgba(0, 0, 0, 0.564)) , url(../../assets/o.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffff;
+  padding: 20px;
+}
+
+#inicial h1{
+  font-size: 50pt;
+}
+
+
+#inicial button{
+  width: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 11pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+#inicial button:active{
+  scale: 0.6;
+}
+
+#lastPost{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  overflow: hidden;
+  padding-bottom: 80px;
+}
+
+#lastPost aside{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  gap: 30px;
+}
+#lastPost img{
+  height: 450px;
+  width: 100%;
+}
+#lastPost span{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#lastPost span button{
+  display: flex;
+  padding: 14px;
+  gap: 5px;
+  width: 140px;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+}
+
+#lastPost figure{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: all .5s linear;
+}
+
+#lastPost figure:active{
+  scale: 0.9;
+}
+#lastPost figure figcaption{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: justify;
+  width: 90%;
+}
+
+#lastPost figure figcaption div{
+  display: flex;
+  gap: 20px;
+}
+
+#lastPost figure button{
+  width: 140px;
+  height: 40px;
+  background-color: #000;
+  color: #ffff;
+  border: none;
+  border-radius: 30px;
+}
+
+
+
+
+@media screen and (max-width : 720px) {
+
+ #lastPost aside{
+  grid-template-columns: 1fr;
+  gap: 50px;
+}
+
+#lastPost img{
+  height: 250px;
+  width: 100%;
+}
+#lastPost span {
+  display: flex;
+  align-items: center;
+}
+#lastPost span button{
+  width: 120px;
+}
+  #lastPost figure button{
+    width: 45%;
+  }
+
+  #inicial h1{
+  font-size: 30pt;
+}
+
+  #inicial button{
+    width: 150px;
+  }
+  #lastPost figure figcaption{
+    width: 100%;
+  }
+  #lastPost figure figcaption div{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#lastPost figure button{
+  width: 140px;
+}
+}
+
+
+@media screen and (max-width : 1024px) and (min-width : 720px) {
+  #lastPost aside{
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+}

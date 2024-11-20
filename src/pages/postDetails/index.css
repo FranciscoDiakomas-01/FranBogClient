@@ -1,0 +1,154 @@
+
+#postDetails{
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+#postDetails  figure{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+#postDetails  figure img{
+    height: 600px;
+    width: 900px;
+}
+#postDetails  figure aside{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+#postDetails  figure figcaption{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+#postDetails  figure figcaption span{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#postDetails  figure figcaption p{
+    text-align: justify;
+}
+
+#postDetails article{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 80%;
+}
+
+#postDetails span > span{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: #ffff;
+    border-radius: 50%;
+    font-size: 11pt;
+}
+#postDetails hr{
+    color: #000;
+    background-color: #000;
+    width: 80%;
+}
+#commet{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+#commet > span{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+#commet div{
+
+    background-color: #f4f4f4;
+    box-shadow: 4px 4px 4px #00000005;
+    word-wrap: break-word;
+    width: 50%;
+    padding: 10px;
+    text-align: justify;
+}
+
+#postDetails form{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+#postDetails input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    padding-left: 10px;
+    border: solid #edededed 1px;
+    outline: none;
+    background-color: #edededed ;
+}
+
+#postDetails button{
+    position: absolute;
+    background-color:#000;
+    right: 0;
+    color: #fff;
+    height: 100%;
+    width: 40px;
+}
+
+#commet > div{
+    text-align: justify;
+    line-height: 22px;
+}
+
+@media screen  and (max-width : 800px) {
+    #postDetails  figure img{
+        height: 350px;
+        width: 100%;
+    }
+    #postDetails  figure{
+        width: 90%;
+    }
+    #postDetails  figure figcaption span{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    #commet{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #commet > span{
+        width: 100%;
+    }
+
+    #commet div{
+        width: 100%;
+        min-height: 100px;
+    }
+}
