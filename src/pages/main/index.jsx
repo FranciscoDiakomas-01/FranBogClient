@@ -9,7 +9,7 @@ export default function Main() {
     
     //
     async function getLatestPosts() {
-      const API = await fetch("http://localhost:8080/posts?limit=6&page=1");
+      const API = await fetch("http://localhost:8080/posts?limit=8&page=1");
       const response = await API.json()
       setPosts(response?.data)
     }
@@ -20,7 +20,7 @@ export default function Main() {
   return (
     <>
       <section id="inicial">
-        <h1>Bem Vindo ao FranBlog</h1>
+        <h1>Bem Vindo ao Blog do Francisco Diakomas</h1>
         <button
           onClick={() => {
             window.scrollTo({
@@ -59,7 +59,6 @@ export default function Main() {
                 <img src={post.cover} />
                 <strong>{post.title}</strong>
                 <figcaption>
-                  <p>{post.description?.slice(0, 100)} ...</p>
                   <div>
                     <i>
                       <FaCalendar />

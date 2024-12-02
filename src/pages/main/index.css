@@ -29,6 +29,8 @@
   align-items: center;
   justify-content: center;
   gap: 5px;
+  height: 50px;
+  width: 140px;
 }
 
 #inicial button:active{
@@ -46,12 +48,13 @@
 
 #lastPost aside{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
   gap: 30px;
 }
 #lastPost img{
-  height: 450px;
-  width: 100%;
+  height: 320px;
+  width: 300px;
+  border: solid #eeeeee;
 }
 #lastPost span{
   width: 100%;
@@ -75,8 +78,9 @@
 #lastPost figure{
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 5px;
   transition: all .5s linear;
+  cursor: pointer;
 }
 
 #lastPost figure:active{
@@ -115,7 +119,7 @@
 }
 
 #lastPost img{
-  height: 250px;
+  height: 300px;
   width: 100%;
 }
 #lastPost span {
@@ -150,9 +154,12 @@
 }
 
 
-@media screen and (max-width : 1024px) and (min-width : 720px) {
+@media screen and (max-width : 1024px) and (min-width : 719px) {
   #lastPost aside{
     grid-template-columns: 1fr 1fr;
     gap: 50px;
-  }
+  }#lastPost img{
+  height: 350px;
+  width: 100%;
+}
 }

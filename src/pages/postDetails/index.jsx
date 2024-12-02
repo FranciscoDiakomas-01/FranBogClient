@@ -52,6 +52,9 @@ export default function PostDetails() {
     const response = await API.json()
 
     if (response?.data == "created") {
+      setTimeout(() => {
+        location.reload()
+      },1000)
       return true
     } else {
       toast.error("Erro ao Cadastrar!");

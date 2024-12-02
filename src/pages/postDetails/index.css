@@ -21,6 +21,7 @@
 #postDetails  figure img{
     height: 600px;
     width: 900px;
+    border: solid #eeeeee;
 }
 #postDetails  figure aside{
     width: 80%;
@@ -124,7 +125,7 @@
     line-height: 22px;
 }
 
-@media screen  and (max-width : 800px) {
+@media screen  and (max-width : 720px) {
     #postDetails  figure img{
         height: 350px;
         width: 100%;

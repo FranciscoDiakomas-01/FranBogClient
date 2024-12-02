@@ -61,7 +61,7 @@ export function App() {
       <ToastContainer />
       <header>
         <nav>
-          <Link to={"/"}>FranBlog</Link>
+          <Link to={"/"}>FNotes</Link>
           <ol>
             <FaBars
               onClick={() => {
@@ -87,7 +87,7 @@ export function App() {
       <Outlet />
       <footer>
         <div>
-          <strong>FranBlog</strong>
+          <strong>FNOTES</strong>
           <p>Bem vindo ao meu blog , um lugar onde as novidades das últimas horas nunca faltam para agradar o seu dia!</p>
         </div>
 
